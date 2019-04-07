@@ -20,6 +20,8 @@
         <maven.compiler.version>3.8.0</maven.compiler.version>
         <apache.httpcomponent.version>4.5.5</apache.httpcomponent.version>
         <apache.httpcore.version>4.4.9</apache.httpcore.version>
+        <google.common.collections.version>1.0</google.common.collections.version>
+        <springframework.context.version>5.1.4.RELEASE</springframework.context.version>
     </properties>
 
     <dependencyManagement>
@@ -34,6 +36,16 @@
                 <artifactId>httpcore</artifactId>
                 <version>${apache.httpcore.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.google.collections</groupId>
+                <artifactId>google-collections</artifactId>
+                <version>${google.common.collections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${springframework.context.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -44,6 +56,14 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.collections</groupId>
+            <artifactId>google-collections</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
         </dependency>
     </dependencies>
 
