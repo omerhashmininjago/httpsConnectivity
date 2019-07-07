@@ -37,7 +37,7 @@ public class ConnectionPool {
 
     @PreDestroy
     private void shutDownConnectionPool() {
-        poolingHttpClientConnectionManager.shutdown();
+        poolingHttpClientConnectionManager.close();
         poolingHttpClientConnectionManager = null;
     }
 
